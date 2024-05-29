@@ -1,0 +1,12 @@
+.All_Stores{
+  min-height: 100vh;
+  padding: 0;
+  background-color: white;
+}
+.All_Stores h1{
+    margin: 1em;
+    font-size: 1.1em;
+    font-weight:500;
+    color: rgb(26, 25, 25);
+    margin-bottom: 1em;
+}

@@ -1,0 +1,196 @@
+.Home_Store8487778487{
+    background-color: white;
+    & .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-bottom: 1em;
+        & img{
+            width: 100%;
+            height:450px;
+        }
+        & .bady{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            padding: 3em;
+            & h1{
+                color: white;
+                font-size: 3em;
+                font-weight: 300;
+                font-family: monospace;
+            }
+            & p{
+                color: #FFDE59;
+                font-size: 1.2em;
+                font-weight: 100;
+                font-family: monospace;
+            }
+            & button{
+                padding: 0.5em 1em;
+                background-color: #FFDE59;
+                color: white;
+                font-size: 1em;
+                font-weight: 100;
+                font-family: monospace;
+                border: none;
+                cursor: pointer;
+                margin-top: 1em;
+                &:hover{
+                    transition: all 0.5s ease-in-out;
+                  transform: scale(1.1);
+                  
+                }
+
+            }
+        }
+        & h1{
+            margin: 0;
+            padding: 0;
+            font-size: 2em;
+            font-weight: 300;
+            font-family: monospace;
+        }
+    }
+    & .ShopByCategory{
+        & h2{
+            font-size: 1.2em;
+            font-weight: 500;
+            margin: 1em 0;
+            padding: 0.5em 1em;
+            font-family: monospace;
+        
+        }
+    }
+}
+.Home_Store87787{
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 1em;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+    & .images{
+        width: 400px;
+        height: 400px;
+        cursor: pointer;
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+        position: relative;
+        overflow: hidden;
+        &:hover .category{
+            background-color: rgba(0,0,0,0.7);  
+        }
+        &:hover .category h1{
+           transform: scale(1.1);
+              transition: all 0.5s ease-in-out;
+        }
+        &:hover .category .border2{
+          transition: all 0.5s;
+          width: 90%;
+        }
+
+        &:hover img{
+            transform: scale(1.1);
+            transition: all 0.5s;
+          
+         }
+        & .category{
+            width: 100%;
+            height: 100%;
+            position: absolute; 
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.5);  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & h1{
+            font-size: 1.5em;
+            color: white;
+            font-weight: 300;
+            font-family: monospace;
+        }
+            & p{
+                transform: translate(0, 3em);
+            padding: 0.3em;
+            font-size: 1em;
+            color: white;
+            font-weight: 100 !important;
+            border-bottom: 2px solid white;
+            }
+            & .border2{
+                width: 70%;
+                height: 1px;
+                margin-top: 0.5em;
+                background-color: rgba(245, 245, 245, 0.329);
+            }
+          
+        }
+        & img{
+           height: 100%;
+           width: 100%;
+        }
+    }
+  
+}
+@media screen and (max-width: 1300px){
+    .Home_Store87787{
+        grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+        padding: 1em;
+        & .images{
+            width: 300px;
+            height: 300px;
+            & .category{
+                & h1{
+                    font-size: 1.2em;
+                }
+                & p{
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    .Home_Store87787{
+        grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
+        padding: 1em;
+        & .images{
+            width: 200px;
+            height: 200px;
+            & .category{
+                & h1{
+                    font-size: 1em;
+                }
+                & p{
+                    font-size: 0.6em;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    .Home_Store87787{
+        grid-template-columns:repeat(auto-fill, minmax(150px, 1fr));
+        padding: 0.5em;
+        & .images{
+            width: 150px;
+            height: 150px;
+            & .category{
+                & h1{
+                    font-size: 0.8em;
+                }
+                & p{
+                    font-size: 0.5em;
+                }
+            }
+        }
+    }
+    
+}

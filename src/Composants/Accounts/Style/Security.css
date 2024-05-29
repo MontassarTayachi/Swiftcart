@@ -1,0 +1,121 @@
+.Security{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10%;
+  
+    
+}
+.Security .Titel{
+    
+    padding-top: 1.2em;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    border-bottom: 0.1em solid gainsboro;
+    width: 100%;
+    
+}
+.Security .Titel h1{
+    font-size: 1.5rem;
+  
+   
+}
+.Security .ChangePassword{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    width: 100%;
+    justify-content: space-between;
+}
+.Security .ChangePassword h1{
+    font-size: 1.2rem;
+   
+}
+.Security .ChangePassword .password{
+    background:white ;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.103);
+    padding: 1rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 0.5em;   
+
+}
+.Security .ChangePassword .password h1{
+    font-size: 1rem;
+}
+.Security .ChangePassword .password button{
+    max-width:200px ;
+    border-radius: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    border: 0.1em solid #bbb;
+}
+
+.Security .Devices{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.Security .Devices h1{
+    font-size: 1.2rem;
+    color: black;
+}
+.Security .Devices .Title{
+    font-size: 0.8em;
+    max-width: 20%;
+    color: #6e6e6e;
+}
+.Security .Devices .Loggedin{
+    background:white ;
+    padding: 1rem;
+    width: 60% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 0.5em;  
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.103); 
+   
+
+}
+.Security .Devices .Loggedin h2{
+    border-bottom: 1px solid #bbb;
+    font-size: 1rem;
+    padding-bottom: 1em;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .Security .ChangePassword{
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .Security .Devices{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .Security .Devices .trezzziskoidj{
+        width: 100%;
+    }
+    .Security .ChangePassword .password{
+        margin-left: 0;width: 100%;
+    }
+    .Security .Devices .Loggedin{
+        width: 100%;
+    }
+    .Security .Devices .Title{
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+.search{
+    display:grid;
+    background-color: white !important;
+    grid-template-rows:auto auto auto;
+    grid-template-columns: 20% auto auto;
+    grid-template-areas:
+     "navbar   navbar navbar "
+     " sidbar   body body "
+     " sidbar   body body"
+    ; 
+}
+.search .navduhziu{
+    padding: 0;
+    grid-area: navbar; 
+   
+}
+.search .filtersdcsd{
+    background-color: white ;
+    grid-area: sidbar;
+    padding: 0;       
+}
+
+.search .result{
+    overflow: hidden;
+    padding: 1rem;
+    background-color: white ;
+    grid-area: body;
+}
+
+@media screen and (max-width: 1150px) {
+    .search{
+        grid-template-columns: 30% auto auto;
+       
+    }
+    
+}
+@media (max-width:800px) {
+    .search{
+       width: 100%;
+       grid-template-columns: 0 auto auto;
+       grid-template-areas:
+        "navbar   navbar navbar "
+        " sidbar   body body "
+        " sidbar   body body"
+       ; 
+     
+    }
+}

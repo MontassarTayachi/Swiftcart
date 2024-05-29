@@ -1,0 +1,213 @@
+/* FILEPATH: /C:/Users/monta/Desktop/PFE/Code/swiftcart/src/Composants/Store/StoreManagement/Composants/Setting/Setting.css */
+
+/* Styles for the Setting component */
+.setting {
+    padding-left: 2em;
+    margin-top: 1em;
+}
+
+.setting-title {
+  /* Add styles for the title */
+}
+.setting-title h2{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: 'Public Sans', sans-serif;
+    margin: 0;
+}
+.setting-content {
+ margin-top: 1.5em;   
+ width: 95%;
+ padding: 1em;
+}
+.Autofile{
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: white;
+    border-radius: 0.3em;
+    border: 1px solid #d6d6d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .ProfileHeader{
+        color: rgb(110, 108, 108);
+        margin: 0;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    padding: 0.2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      
+        & h2{
+            font-size: 1.1em;
+    margin: 0.2em;
+    color: rgb(66, 65, 65);
+        }
+       
+    }
+    & .parmetre{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.5em;
+        width: 100%;
+        margin:  0.4em 0;
+        &:hover{
+            cursor: pointer;
+            background-color: #ece9e960;
+            border-radius: 0.5em;
+        }
+    }
+    & .payment{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 3em;
+        & .item{
+            margin: 0.4em 0;
+            border-radius: 0.5em;
+            border: 0.1em solid #d6d6d6;
+            padding: 0.3em 0.8em;
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+    }
+
+}
+.setting-content .Profile{
+    font-size: 1.5em;
+    margin: 0;
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: white;
+     border-radius: 0.3em;
+     border: 1px solid #d6d6d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.setting .setting-content .storeimage{
+    width: 3rem;
+    height: 3rem;
+    border-radius:0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.setting .setting-content .storeimage img{
+    width: 100%;
+    border-radius:0.5rem;
+}
+.setting .setting-content .storeimage button{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius:0.5rem;
+    border: none;
+    font-size: 1.4rem;
+    color: white;
+    display: none;
+}
+.setting .setting-content .storeimage:hover button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.setting .settingimage{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0.5em;
+}
+.setting .settingimage .titre{
+    color: rgb(110, 108, 108);
+    border: none;
+    margin-left: 1em;
+}
+.setting .settingimage .titre h1{
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0;
+    color: rgb(110, 108, 108);
+}
+.setting-content .Profile .ProfileHeader{
+    margin: 0;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    padding: 0.2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.setting-content .Profile .ProfileHeader button{
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(110, 108, 108);
+    border: none;
+    background-color: transparent;
+}
+.setting-content .Profile .ProfileHeader h2{
+    font-size: 0.8em;
+    margin: 0.1em;
+    color: rgb(66, 65, 65);
+}
+.setting-content .Profile .storename{
+   padding: 0.5em;
+   display: flex;
+   align-items: center;
+   width: 90%;
+   overflow: hidden;
+   border-bottom: 0.05em solid #d6d6d6;
+}
+.setting-content .Profile .storename .uhucuchzeiuceiu{
+    font-size: 1.5rem;
+    margin-right: 0.5em;
+    color: rgb(110, 108, 108);
+}
+.setting-content .Profile .storename h1{
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0;
+    color: rgb(110, 108, 108);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.setting-content .Profile .storename h2{
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0;
+    color: rgb(37, 37, 37);
+}
+
+
+.setting-button {
+  /* Add styles for the button */
+}
+@media screen and (max-width: 800px){
+    .setting {
+        padding-left: 0;
+        padding: 0.5rem;
+        margin-top: 1em;
+    }
+    .setting-content{
+        width: 100%;
+    }
+    .setting-content .Profile .storename{
+        padding: 0.4em;
+    }
+}

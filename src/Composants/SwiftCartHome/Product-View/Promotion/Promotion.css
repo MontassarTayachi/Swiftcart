@@ -1,0 +1,89 @@
+.ssssspppp{
+   
+  
+}
+.ssssspppp::before{
+    color: #C7C8CC;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background: linear-gradient(to bottom,rgb(227, 230, 230,0) 60%, rgb(227, 230, 230,1) 100%);
+        /* Ce dégradé commence transparent et devient blanc. Ajustez les couleurs et l'opacité comme nécessaire. */
+      
+}
+.xzihedpiu9858949848{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    & .Galleria{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index:1;
+    }
+    & .Galleria button{
+        text-shadow:
+        -1px -1px 0 #ffffff,  
+        1px -1px 0 #ffffff,
+        -1px  1px 0 #ffffff,
+        1px  1px 0 #ffffff;
+        position: absolute;
+        top:0;
+        min-height: 30% !important;
+        color: black;
+        font-size: 1em;
+    }
+    & .ssiiidjij{
+        z-index: 2;
+        padding: 0 1em;
+        padding-top: 20rem;
+        width: 100%;
+        & .sniijsi556{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1em;
+        }
+        & .sssooodood{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+           
+        }
+    }
+    
+
+}
+@media screen and (max-width: 1000px){
+    .xzihedpiu9858949848{
+        & .Galleria button{
+            font-size: 0.8em;
+            
+        }
+      
+        & .ssiiidjij{
+            padding-top: 5rem;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            overflow-x: auto;
+            align-items: center;
+            justify-content: flex-start; 
+            padding-bottom: 1em;
+            & .sniijsi556{
+                margin-bottom: 0;
+            }
+        }
+
+}
+}

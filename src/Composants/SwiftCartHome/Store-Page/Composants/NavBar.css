@@ -1,0 +1,139 @@
+/* NavBar.css */
+
+/* Stylisation de l'image de couverture du magasin */
+.coverstorephoto {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: #f0f0f0;
+}
+
+/* Styles de la barre de navigation fixée */
+.navbar8994585csfd585.navbar-fixed {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Styles de la barre de navigation par défaut */
+.navbar8994585csfd585 {
+    position: relative; 
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    height: 5rem;
+    border-bottom: 0.2em solid rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour les images dans la barre de navigation */
+.navbar8994585csfd585 img {
+    border: 0.2em solid rgba(128, 128, 128, 0.034);
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    margin-left: 1rem;
+    transition: all 0.3s;
+}
+
+.navbar8994585csfd585 img:hover,
+.navbar8994585csfd585 img:focus {
+    border: 0.2em solid black;
+}
+
+/* Styles pour le titre et le bouton dans la barre de navigation */
+.navbar8994585csfd585 .titel {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    height: 4rem;
+}
+
+.navbar8994585csfd585 .titel h1 {
+    font-size: 1.2rem;
+}
+
+.navbar8994585csfd585 .titel button {
+    padding: 0.2em 1em;
+    cursor: pointer;
+    border: none;
+    margin-top: 0.2em;
+    background-color: whitesmoke;
+    box-shadow: 0 0 0.3em grey;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.navbar8994585csfd585 .titel button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Styles pour la liste de navigation */
+.navbar8994585csfd585 ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+}
+
+.navbar8994585csfd585 ul li,
+.navbar8994585csfd585 ul a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar8994585csfd585 ul li:hover a {
+    color: grey;
+}
+
+.navbar8994585csfd585 ul li .active {
+    color: green;
+    border-bottom: 0.2em solid green;
+}
+
+/* Styles pour la barre de recherche */
+.navbar8994585csfd585 .searchbar {
+    width: 40%;
+    margin-left: 1em;
+}
+
+/* Média requêtes pour les tailles d'écran plus petites */
+@media screen and (max-width: 1100px) {
+    .coverstorephoto {
+        height: 200px;
+    }
+    .navbar8994585csfd585 .searchbar {
+        width: 30%;
+    }
+    .navbar8994585csfd585 ul li,
+    .navbar8994585csfd585 ul a {
+        margin: 0.2em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .coverstorephoto {
+        height: 150px;
+    }
+    .navbar8994585csfd585 {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        padding: 0.5em;
+    }
+    .navbar8994585csfd585 .searchbar {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 95%;
+    }
+    .navbar8994585csfd585 ul {
+        margin-top: 1em;
+    }
+}

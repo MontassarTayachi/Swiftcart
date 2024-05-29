@@ -1,0 +1,151 @@
+.EditPhotos{
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+.EditPhotos .header{
+    border-top-right-radius:1rem ;
+    border-top-left-radius:1rem ;
+    width: 100%;
+    padding: 0.5em;
+    padding-bottom: 0;
+    background-color: whitesmoke;
+    display: flex;
+    padding: 0.8em;
+    justify-content: space-between;
+}
+.EditPhotos .SunEditor{
+    max-height: 400px;
+    overflow: auto;
+}
+.EditPhotos .images{
+ margin-top: 1em;   
+ max-height: 350px;
+ overflow: auto;
+ padding: 1rem;
+ max-width: 700px;
+}
+.EditPhotos .images .setopen_CircularProgress{
+   width: 100%;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.EditPhotos .UploadPhotos{
+    padding: 1em 1em;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.EditPhotos img {
+    width: 100% !important; /* Fait en sorte que l'image occupe toute la largeur du conteneur */
+    height: 100% !important; /* Optionnel, pour occuper toute la hauteur, peut déformer l'image si le ratio n'est pas le même */
+    object-fit: cover !important; /* Assure que l'image couvre l'espace disponible sans se déformer */
+  }
+.EditPhotos .UploadPhotos button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(90, 89, 89, 0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(43, 40, 40, 0.4) 0%, rgba(0,0,0,0.40) 120%) #777272;
+    background-blend-mode: multiply,multiply;
+    border-radius: 0.4em;
+    font-size: 0.9em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0.2em;
+    width: 7rem;
+    color: white;
+    font-weight: bold;
+    border: 0.1em solid gray;
+}
+
+.EditPhotos .header h1{
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.EditPhotos .header button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2em;
+    position: relative;
+    top: -0.4em;
+    color: black;
+}
+.EditPhotos .body .input{
+    display: flex;
+    flex-direction: column;
+}
+
+.EditPhotos  .erreur{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin:1em;
+    background-color: rgba(245, 202, 202, 0.719);
+    border: 0.1em solid rgba(238, 136, 136, 0.815);
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    padding: 0.5em;
+}
+.EditPhotos  .erreur p{
+    color: rgb(138, 0, 0);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.EditPhotos .body h5{
+    font-size: 1em;
+    color: black;
+}
+.EditPhotos .body .input{
+    width: 100%;
+}
+.EditPhotos .body label{
+    font-size: 0.8em;
+    color: black;
+    font-weight: 500;
+}
+.EditPhotos  .button{
+    display: flex;
+    padding: 0.5em;
+    margin-top: 1em;
+    justify-content: flex-end;
+    width: 100%;
+  
+}
+.EditPhotos h2{
+    padding: 0.8em;
+    font-size: 1.1em;
+    color: black;
+}
+.EditPhotos  .button button{
+   margin-top: 0.5em;
+   border-radius: 0.5em;
+   padding:  0.5em 1em;
+   border: 0.01em solid black;
+   background-color: #FFD814;
+   font-size:0.7em ;
+   font-weight: 600;
+}
+.EditPhotos .button .onClose{
+    background-color: whitesmoke;
+    border: 0.1em solid rgba(0, 0, 0, 0.425); 
+    margin-right: 1em;
+}
+.EditPhotos .button .onClose:hover{
+    background-color: #e7e7e7;
+}
+.EditPhotos  .button button:hover{
+    background-color: #e6c211;
+}
+.xciao9898{
+    color: rgba(255, 255, 255, 0.54) !important;
+    cursor: move !important;    
+}
+

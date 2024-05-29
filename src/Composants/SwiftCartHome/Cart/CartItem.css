@@ -1,0 +1,68 @@
+.CartItem56888{
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
+    border-top:0.1px solid rgba(0, 0, 0, 0.4);
+    & img{
+       max-width: 200px;
+       aspect-ratio: 1/1;
+    }
+    & .detalis{
+        width: 100%;
+        margin-left: 1em;
+    }
+    & .price{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & h3{
+            cursor: pointer;
+            font-size: 1.3em;
+            &:hover{
+                text-decoration: underline;
+                color: rgb(107, 3, 3);
+            }
+        }
+
+    }
+    & .inStoke{
+        color: green;
+    }
+    & .outStoke{
+        color: red;
+    }
+    & .quantity{
+      display: flex;
+      align-items: center;
+
+    }
+    & p{
+        margin: 0.2em;
+        font-weight: 600;
+    }
+    & .quantity p{
+       
+       margin-right: 0.5em;
+    }
+    & .djiiejzoij{
+        display: flex;
+    }
+    & .djiiejzoij button{
+       margin-right: 1em;
+    }
+    & .djiiejzoij button:hover{
+       color: royalblue;
+    }
+}
+@media screen and (max-width: 800px){
+    .CartItem56888{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        & img{
+            max-width: 80%;
+        }
+    }
+}

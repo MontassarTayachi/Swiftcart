@@ -1,0 +1,125 @@
+.MyStore{
+    height: 100vh;
+    width: 100%;
+    background: #5c2235 url(https://cdn.shopify.com/shopifycloud/identity/assets/gradient/noise-ae0ab1628dee87591c6f6d3740b6e7e4e5109417e35a0781070d9d737f959e22.png);
+    background-size: 100px; /* ou la taille souhaitée */
+    background: -webkit-linear-gradient(to right, #040c1b, #072c0f, #aa4b6bfa), url(https://cdn.shopify.com/shopifycloud/identity/assets/gradient/noise-ae0ab1628dee87591c6f6d3740b6e7e4e5109417e35a0781070d9d737f959e22.png);
+    background: linear-gradient(to right, #1c1c2be8, #3b3b5cda, #26726fd3), url(https://cdn.shopify.com/shopifycloud/identity/assets/gradient/noise-ae0ab1628dee87591c6f6d3740b6e7e4e5109417e35a0781070d9d737f959e22.png);
+
+}
+.MyStore .card{
+    width: 40%;
+    padding: 2%;
+    background-color: white;
+    position: relative;
+    top:50%;
+    left:50%;
+    border-radius: 15px;
+    transform: translate(-50%,-50%);
+    
+}
+.MyStore .card .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.MyStore .card .header .a1{
+width: 10rem;
+cursor: pointer;
+}
+.MyStore .card .header .a2{
+    width: 3rem;
+    height: 3rem;
+    }
+.MyStore .card .WelcomeUser{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;   
+}    
+.MyStore .card .WelcomeUser h1{
+    font-size: 1.5em;
+}
+.MyStore .card .WelcomeUser button:hover .re1{
+    animation: rotate 1s ease-in-out 0s;
+}
+.MyStore .card .WelcomeUser button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(90, 89, 89, 0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(43, 40, 40, 0.4) 0%, rgba(0,0,0,0.40) 120%) #777272;
+    background-blend-mode: multiply,multiply;
+    border-radius: 0.4em;
+    font-size: 0.9em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0.2em;
+    width: 7rem;
+    color: white;
+    font-weight: bold;
+    border: 0.1em solid gray;
+}
+.MyStore .card .WelcomeUser button:hover{
+background-color: rgba(26, 22, 22, 0.7);
+}
+.MyStore .card .MyStores{
+    margin-top: 1rem;
+}
+.MyStore .card .MyStores .ActiveStores{
+    overflow: auto;
+    max-height: 250px;
+   
+}
+@media screen and (max-width: 850px) {
+    .MyStore .card{
+       width: 100%;
+       height: 100%;
+       border-radius:0;
+        padding-top: 2rem;
+        
+    } 
+    .MyStore .card .WelcomeUser{
+        display: flex;
+        width: 100%;
+        align-items: start;
+        flex-direction: column;
+        justify-content: space-between; 
+        position: relative;  
+        margin-bottom: 2rem;
+    } 
+    .MyStore .card .WelcomeUser button{
+        position: absolute;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+       max-width: 150px;
+        width: 50%;
+       
+    }
+    .MyStore .card .WelcomeUser button .re1{
+        margin-right: 10px;
+    }
+    .MyStore .card .MyStores .ActiveStores{
+        overflow: auto;
+        max-height: 100%;
+        
+    }
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+   
+    50%{
+        transform: rotate(30deg);
+    }
+     
+      100%{
+          transform: rotate(-30deg);
+      }
+      
+    
+
+  }
+  

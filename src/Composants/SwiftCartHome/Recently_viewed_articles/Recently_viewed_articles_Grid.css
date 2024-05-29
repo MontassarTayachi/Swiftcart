@@ -1,0 +1,19 @@
+.BrowsingHistory787{
+    background-color: white;
+    margin: 1em;
+    padding: 1em;
+    & h1{
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+    & .Pagination{
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+        align-items: center;
+    }
+}
+.Recently_viewed_articles787{
+background:white; 
+margin: 1em 1.5em
+}

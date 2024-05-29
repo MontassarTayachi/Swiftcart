@@ -1,0 +1,85 @@
+.review9888899889899889{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    width: 100%;
+    margin: 1em;
+    max-width: 700px;
+    background-color: white;
+    color: black;
+    padding-top:0 ;
+    & .close{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-right: -2em;
+        padding: 0.2em 0;
+        & button{
+            margin: 0;
+            padding: 0.2em;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            
+        }
+    }
+    & h1{
+        font-size: 1.5em;
+        margin: 0;
+        padding: 0;
+    }
+    & p{
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+    }
+ 
+    & .ratingEtoiles{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 0.3em;
+        & h3{
+            font-size: 1em;
+            margin: 0;
+            padding: 0;
+        }
+        & .rating{
+            margin:  0.5em 0;
+           font-size: 2em;
+          
+        }
+      
+    }
+    & textarea{
+        width: 100%;
+        height: 10em;
+        margin: 1em 0;
+        padding: 1em;
+        border-radius: 0.5em;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    & button{
+        padding: 1em 2em;
+        border: none;
+        border-radius: 0.5em;
+        background-color: #f7f7f7;
+        color: black;
+        font-weight: 500;
+        cursor: pointer;
+        &:hover{
+            background-color: #f0f0f0;
+        }
+    }
+}

@@ -1,0 +1,190 @@
+.ssmsoa578{
+ position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+   z-index: 1000;
+   margin: 0;
+
+}
+.pay1898{
+    width: 100%;
+    margin: 1em;
+    max-width: 700px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: white;
+    border-radius: 1em;
+    padding:1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    & .error{
+        & h1{
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+        & p{
+            font-size: 1em;
+        }
+        & button{
+            background-color: #8b0000;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 0.5em;
+            cursor: pointer;
+            font-weight: 500;
+            color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            &:hover{
+                background-color: #b30000;
+            }
+        }
+    }
+    & .success{
+       & h1{
+
+        font-size: 1.2em;
+        margin-bottom: 0.5em;
+       }
+       & p{
+        font-size: 1em;
+    }
+    & button{
+        background-color: #025302;
+        border: none;
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        cursor: pointer;
+        font-weight: 500;
+        color: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        &:hover{
+            background-color: green;
+        }
+    }
+   
+     
+
+    }
+    & .navsssssss{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        & button{
+            background-color: transparent;
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 0.5em;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+    }
+    & h1{
+        margin: 0;
+      font-size: 1.5em;
+    }
+    & h2{
+        font-size: 1.2em;
+    }
+    & p{
+        font-size: 1em;
+    }
+    & label{
+        font-weight: 500;
+    }
+    & .button{
+        width: 100%;
+        display: flex;
+        align-items: center;
+       padding: 0.5em 1em;
+       & .next{
+        width: 100%;
+        background-color: #025302;
+        border: none;
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        cursor: pointer;
+        font-weight: 500;
+        color: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        &:hover{
+            background-color: green;
+        }
+       }
+    } 
+}
+.paymentMethod487481554547{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    & .items{
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+        & .item{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5em 1em;
+            border-radius: 1em;
+            margin:0.5em 0 ;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+            & h3{
+                margin: 0;
+                padding: 0;
+                font-size: 1.2em;
+            }
+           
+        }
+    }
+    & .back{
+        background-color: #1a0000;
+        border: none;
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        cursor: pointer;
+        font-weight: 500;
+        color: white;
+        width: 100%;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        &:hover{
+            background-color: #2c2c2c;
+        }
+    
+    }
+    & .nopayment{
+        text-align: center;
+        & h3{
+            font-size: 1.2em;
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    .pay1898{
+
+        min-width: 90%;
+    }
+    
+}

@@ -1,0 +1,40 @@
+.wishlistemadi{
+& .reset{
+    display: flex;
+    padding-top: 0.5em;
+    padding-right: 1em;
+    justify-content: flex-end;
+   
+}
+& .reset button{
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    color: #374151;
+    font-weight: 700;
+    cursor: pointer;}
+& .reset button:hover{
+    background-color: #d5dceb;
+}
+}
+.navsksisi55{
+    width: 100%;
+    background-color:  rgb(35, 47, 62);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.1em;
+    padding: 0.3em;
+    padding-left: 1em;
+}
+.mainzabouerisj{
+    margin: 1em;
+    padding: 1rem;
+    background-color: #fff3cd;
+    width: 80%;
+    text-align: center;
+    border-radius: 0.5em;
+    margin: 1em auto;
+}

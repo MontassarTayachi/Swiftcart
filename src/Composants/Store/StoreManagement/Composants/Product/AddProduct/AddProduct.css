@@ -1,0 +1,210 @@
+.AddProduct {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 5em;
+    margin-top: 1em;
+}
+.AddProduct form {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.AddProduct .header {
+    display: flex;
+    align-items: center;
+}
+
+.ck-editor__editable {
+    position: relative;
+    height: 150px; /* Hauteur fixe */ /* Active le défilement vertical si nécessaire */
+}
+.AddProduct .header h2 {
+    font-size: 1.5em;
+    margin: 0;
+    font-size: 600;
+}
+.AddProduct .header button {
+    color: black;
+    border: none;
+    background-color: transparent;
+    padding: 0.1em;
+    border-radius: 0.1em;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+.AddProduct .header button:hover {
+    background-color: #3d3d3d41;
+}
+.AddProduct .card {
+    margin-top: 1em;
+    border: 0.1em solid #e0e0e0;
+    background: white;
+    width: 80%;
+    padding: 1em;
+}
+.AddProduct label {
+    font-weight: 600;
+    color: black;
+}
+.AddProduct .card p {
+    margin: 0;
+    margin-left: 0.5em;
+    font-size: 0.8em;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(126, 125, 125);
+}
+.AddProduct .card .error {
+    background-color: rgb(235, 178, 178);
+    border: 0.1em solid rgb(83, 7, 7);
+    border-radius: 0.5em;
+    position: relative;
+}
+.AddProduct .card .error p {
+    color: rgb(83, 7, 7);
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0.5em;
+}
+.AddProduct .card .error button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.AddProduct .Input {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+.AddProduct .price {
+    display: flex;
+    flex-direction: row;
+}
+.AddProduct .price .input {
+    margin-left: 1em;
+    width: 50%;
+}
+.AddProduct .Save {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10%;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 1000;
+}
+.AddProduct .Save h1 {
+    color: rgb(255, 244, 244);
+    font-weight: 500;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+.AddProduct .Save .button {
+    display: flex;
+    align-items: center;
+}
+.AddProduct .Save .button button {
+    color: white;
+    background-color: #757575;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0.5em;
+}
+.AddProduct .Save .button .Saveb {
+    background-color: #269141;
+}
+.css-7sdsh2-MuiAutocomplete-root .MuiOutlinedInput-root {
+    padding: 0px !important;
+}
+.AddProduct .SunEditor {
+    /* max-height: 300px; */
+    overflow: auto;
+}
+.AddProduct .SunEditor p {
+    color: black;
+    font-size: 11px;
+}
+.AddProduct .Uploadimages {
+    position: relative;
+    flex-direction: column;
+    margin-top: 1em;
+    width: 100%;
+    border: 0.15em dashed black;
+    background-color: #ececec;
+    border-radius: 0.5em;
+    padding: 1em;
+    overflow: auto;
+    min-height: 300px;
+    max-height: 600px;
+}
+.AddProduct .Uploadimages .input-files {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.AddProduct .Uploadimages .add {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.5em;
+}
+.AddProduct .Uploadimages .add label {
+    color: rgb(19, 18, 18);
+    background-color: #ffffff;
+    border: 0.1em solid black;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.AddProduct .Uploadimages .input-files label {
+    border-radius: 0.5em;
+    background-color: #9e9e9e;
+    border: 0.1em solid black;
+    padding: 0.5em;
+    cursor: pointer;
+}
+.AddProduct .Uploadimages .input-files p {
+    font-size: 1.1rem;
+    font-weight: 100 !important;
+}
+@media screen and (max-width: 800px) {
+    .AddProduct {
+        padding-left: 0.5em;
+        justify-content: center;
+        align-items: center;
+    }
+    .AddProduct .card {
+        width: 98%;
+    }
+    .AddProduct form {
+        justify-content: center;
+    }
+}

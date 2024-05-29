@@ -1,0 +1,110 @@
+.nav{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2em;
+    padding-right: 2em;
+    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+}
+.nav .navleft{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.nav .navleft button{
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: transparent;
+    margin-left: 15px;
+    display: none;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.nav .navleft img{
+    height: 70%;
+    margin-left: 15px;
+
+}
+ 
+.nav .navleft button:hover{
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.nav .navright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+}
+.nav .navright .button{
+    width: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    color: darkgray;
+    font-size: 20px;
+}
+.nav .navright .userDropdown{
+    background-color: rgb(49, 49, 49);
+    border-radius: 0.5em;
+}
+.nav .navright .user{
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    color: rgb(236, 233, 233);
+    padding-right: 0;
+    padding-left: 0;
+    height: 2.5em;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;  
+    border: 0.1rem solid rgb(102, 101, 101)    ; 
+}
+.nav .navright .user:active{
+    border-color:transparent ;
+    background-color: transparent;
+}
+.nav .navright .dropdown-toggle::after {
+    display: none;
+   
+}
+
+.nav .navright .user p{
+    margin: 0;
+    padding: 0;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: white;   
+   
+}
+.nav .navright .user img{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 0.5em;
+}
+@media screen and (max-width:800px) {
+    .nav .navleft .link{
+        display: none;
+    }
+    .nav .navleft button{
+        display: flex;
+    }
+    .nav .navleft img{
+        display: none;
+    
+    }
+    
+}

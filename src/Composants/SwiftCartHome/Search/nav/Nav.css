@@ -1,0 +1,17 @@
+.nav8485zaad{
+    width: 100%;
+    background-color:  rgb(35, 47, 62);
+  
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.1em;
+    padding: 0.2em;
+    padding-left: 1em;
+}
+.nav8485zaad p{
+    margin :auto 0;
+    display: flex;
+    align-items: center;
+}

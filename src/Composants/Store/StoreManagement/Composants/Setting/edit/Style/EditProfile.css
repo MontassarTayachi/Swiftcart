@@ -1,0 +1,96 @@
+.EditProfile{
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+.EditProfile .header{
+    border-top-right-radius:1rem ;
+    border-top-left-radius:1rem ;
+    width: 100%;
+    padding: 0.5em;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.EditProfile .header h1{
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.EditProfile .header button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2em;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.EditProfile .body{
+background-color: transparent;
+padding: 0.9rem;
+}
+.EditProfile .body .erreur{
+    background-color: rgba(245, 202, 202, 0.719);
+    border: 0.1em solid rgba(238, 136, 136, 0.815);
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    padding: 0.5em;
+}
+.EditProfile .body .erreur p{
+    color: rgb(138, 0, 0);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.EditProfile .body h5{
+    font-size: 1em;
+    color: black;
+}
+.EditProfile .body .input{
+    width: 100%;
+}
+.EditProfile .body label{
+    font-size: 0.8em;
+    color: black;
+    font-weight: 500;
+}
+.EditProfile .body .button{
+    display: flex;
+    margin-top: 1em;
+    justify-content: flex-end;
+    width: 100%;
+  
+}
+.EditProfile .body .button .save{
+   margin-top: 0.5em;
+   border-radius: 0.5em;
+   padding:  0.5em 1em;
+   border: 0.01em solid black;
+   background-color: #FFD814;
+   font-size:0.7em ;
+   font-weight: 600;
+}
+.EditProfile .body .button .save:hover{
+    background-color: #e6c211;
+}
+.EditProfile .body .button .Cancel{
+    margin-top: 0.5em;
+    border-radius: 0.5em;
+    padding:  0.5em 1em;
+    border: 0.01em solid black;
+    background-color: white;
+    font-size:0.7em ;
+    font-weight: 600;
+    margin-right: 0.4em;
+}
+
+.EditProfile .body h6{
+    font-size: 0.8em;
+    color: rgb(94, 93, 93);
+    margin-top: 0.5em;
+}

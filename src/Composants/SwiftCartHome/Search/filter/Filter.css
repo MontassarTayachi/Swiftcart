@@ -1,0 +1,167 @@
+.filter{
+width: auto;
+background-color: transparent;
+}
+.filter .price{
+    padding: 1em;
+}
+.filter .price .PriceForm{
+    padding: 1em;
+    border: 0.2em solid  rgb(35, 47, 62);
+    border-bottom-right-radius:0.5em ;
+    border-bottom-left-radius: 0.5em;
+}
+.filter .p-inputnumber-buttons-horizontal .p-inputnumber-input {
+    width: 100%;
+}
+.filter [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    width: auto;
+    padding: 0.5em;
+}
+.filter .price h1{
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    margin: 0;
+    font-size: 1.2em;
+    background-color:  rgb(35, 47, 62);
+    color: white;
+    padding: 0.5em;
+}
+.filter .price .button{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5em;
+    align-items: center;
+}
+.filter .price .button button{
+    background-color: gold;
+    border: 0.1em solid black;
+    color: black;
+    font-weight: 500;
+    border-radius: 0.2em;
+    padding: 0.2em 0.5em;
+    margin-right: 0.5em;
+}
+.filter .price .button  .zoi{
+    background-color: #ddd;
+
+}
+.filter .Categories{
+    padding: 1em;
+}
+.filter .Categories h1{
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    margin: 0;
+    font-size: 1.2em;
+    background-color:  rgb(35, 47, 62);
+    color: white;
+    padding: 0.5em;
+}
+.filter .Categories .CategoriesForm{
+    padding: 1em;
+    overflow: auto;
+    max-height: 20em;
+    border: 0.2em solid  rgb(35, 47, 62);
+    border-bottom-right-radius:0.5em ;
+    border-bottom-left-radius: 0.5em;
+}
+.filter .Categories h2{
+   font-size: 1.1em;
+}
+.filter .Merchants{
+    padding: 1em;
+}
+.filter .Merchants h1{
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    margin: 0;
+    font-size: 1.2em;
+    background-color:  rgb(35, 47, 62);
+    color: white;
+    padding: 0.5em;
+}
+.filter .Merchants .MarchandsForm{
+    padding: 1em;
+    overflow: auto;
+    max-height: 20em;
+    border: 0.2em solid  rgb(35, 47, 62);
+    border-bottom-right-radius:0.5em ;
+    border-bottom-left-radius: 0.5em;
+}
+.filter .Merchants h2{
+   font-size: 1.1em;
+}
+.filter .Genres{
+    padding: 1em;
+}
+.filter .Genres h1{
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    margin: 0;
+    font-size: 1.2em;
+    background-color:  rgb(35, 47, 62);
+    color: white;
+    padding: 0.5em;
+}
+.filter .Genres .GenresForm{
+    padding: 1em;
+    overflow: auto;
+    max-height: 20em;
+    border: 0.2em solid  rgb(35, 47, 62);
+    border-bottom-right-radius:0.5em ;
+    border-bottom-left-radius: 0.5em;
+}
+.filter .Genres h2{
+   font-size: 1.1em;
+}
+.dkdks468zzoedk{
+    height:90%;
+    margin: 1em;
+    overflow: auto;
+    background-color: white;
+    border-radius: 0.5em;
+    color: rgb(35, 47, 62) ;
+}
+.dkdks468zzoedk .uidehz{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:0.1em solid rgb(35, 47, 62);
+    padding:0.7em;
+
+    align-items: center;
+}
+.dkdks468zzoedk .uidehz button{
+    background-color: transparent;
+    border:none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.dkdks468zzoedk  .button{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em;
+    align-items: center;
+}
+.dkdks468zzoedk  .close{
+    background-color: gold;
+    border: 0.2em solid black;
+    color: black;
+    font-weight: 500;
+    border-radius: 0.2em;
+    padding: 0.2em 0.5em;
+    margin-right: 0.5em;
+}
+
+.aguixjzhzujp{
+    display: block;
+}
+@media (max-width:800px) {
+    .aguixjzhzujp{
+        display: none;
+    }
+    .dkdks468zzoedk{
+        display: block;
+    }
+}

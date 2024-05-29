@@ -1,0 +1,258 @@
+.OrderItem878777{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 3px #ccc;
+    border-radius: 0.5em;
+    background-color: white;
+    color: black;
+    min-width: 50%;
+
+    & .order{
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        background-color:whitesmoke;
+        border-bottom:0.1em solid #ccc; ;
+        width: 100%;
+        & .OrderItemHeader{
+            padding:0.2em;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            border-bottom:0.1em solid #ccc; ;
+            & p{
+                margin: 0;
+                font-size: 1em;
+                font-weight: 600;
+            }
+           & button{
+                background-color:transparent;
+                color: white;
+                border: none;
+                color: black;
+                padding: 0.2em;
+                cursor: pointer;
+                &:hover{
+                   transform: scale(1.1);
+                }
+            }
+           };
+        & .info{
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            & .CustomerInfo{
+                width: 50%;
+                overflow: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 1em;
+                border-left:0.1em solid #ccc ;
+
+                & h2{
+                    font-size: 1.1em;
+                    margin: 0;
+                    margin-bottom: 0.4em;
+                }
+                & h3{
+                    font-size: 0.9em;
+                    margin: 0;
+                }
+                & p{
+                    font-size: 0.9em;
+                    margin: 0;
+                }
+
+            }
+            & .OrderInfo{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 1em;
+                & h2{
+                    font-size: 1.1em;
+                    margin: 0;
+                }
+                & p{
+                    font-size: 0.8em;
+                    margin: 0;
+                }
+            }
+        }  
+
+    }
+    & .userMessage{
+        width: 100%;
+        padding: 1em;
+        background-color:whitesmoke;
+        & h2{
+            font-size: 1em;
+            margin: 0;
+        }
+        & p{
+            font-size: 0.9em;
+            margin: 0;
+        }
+    }
+    & .OrderItems{
+        width: 100%;
+        padding:0.5em 1em;
+        border-bottom:0.1em solid #ccc ;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+
+        & h2{
+            font-size: 1em;
+            margin: 0;
+        }
+    }
+    & .productsInfo{
+        display: flex;
+        width: 100%;
+        padding: 1em;
+        & .productInfo{
+            width: 70%;
+           & h3{
+                font-size: 1em;
+                margin: 0;
+                & .viewproduct{
+                    font-size: 0.8em;
+                    color: blue;
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            & p{
+                color: #3a3a3a;
+                font-size: 1em;
+                font-weight: 500;
+                margin: 0;
+            }
+           }
+        }
+        & .img{
+            width: 30%;
+           
+            & img{
+                max-height: 150px;
+                width: 90%;
+                object-fit: cover;
+            }
+
+
+        }
+        & .OrderActions{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 1em;
+            & .cancel{
+                background-color: rgb(194, 33, 33);
+                color: white;
+                border: none;
+                cursor: pointer;
+                &:hover{
+                   background-color: rgb(71, 13, 13);
+                }
+            }
+            & .confirm{
+                background-color: rgb(1, 71, 1);
+                color: white;
+                border: none;
+                cursor: pointer;
+                    &:hover{
+                        background-color: rgb(0, 59, 0);
+                    }
+            }
+            & button{
+
+                background-color:transparent;
+                color: white;
+                border: none;
+                color: black;
+                padding:0.5em 0.7em;
+                border-radius: 0.4em;
+                cursor: pointer;
+                margin-right: 0.5em;
+            }
+        }
+    }
+   
+@media (max-width: 768px){
+    .OrderItem878777{
+    margin: 0.5em;    
+    min-width: 90%;
+    & .OrderItemHeader{
+        & p{
+            font-size: 0.9em;
+        }
+    }
+    & .info{
+        & .CustomerInfo{
+            width: 70% !important;
+            & h2{
+                font-size: 1em;
+            }
+            & h3{
+                font-size: 0.8em;
+            }
+            & p{
+                font-size: 0.8em;
+            }
+        }
+
+        & .OrderInfo{
+            width: 30% !important;
+            & h2{
+                font-size: 1em;
+            }
+            & p{
+                font-size: 0.7em;
+            }
+        }
+    }
+    & .userMessage{
+        & h2{
+            font-size: 0.9em;
+        }
+        & p{
+            font-size: 0.8em;
+        }
+    }
+    & .OrderItems{
+        & h2{
+            font-size: 0.9em;
+        }
+    }
+    & .productsInfo{
+        & .productInfo{
+            & h3{
+                font-size: 0.9em;
+                & .viewproduct{
+                    font-size: 0.7em;
+                }
+            }
+            & p{
+                font-size: 0.9em;
+            }
+        }
+    }
+    & .OrderActions{
+        & button{
+            padding:0.3em 0.5em;
+        }
+    }
+}
+}
+

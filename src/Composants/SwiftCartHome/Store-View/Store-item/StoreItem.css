@@ -1,0 +1,122 @@
+.StoreItemsqxplapl {
+  min-width: 250px;
+  min-height: 300px;
+  max-width: 270px;
+ /* Couleur initiale de la bordure */
+    transition: all 0.5s; /* Transition fluide pour la transformation et le changement de couleur */
+    padding: 0.8em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 0.2em 0 rgba(0,0,0,0.1);
+}
+.StoreItemsqxplapl:hover {
+    transform: scale(1.03); /* Zoom sur l'élément au survol */
+    border: none;
+    box-shadow: none;
+}
+.StoreItemsqxplapl img{
+    width: 100%;
+    height: 100%;
+    max-height: 150px;
+    max-width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+.StoreItemsqxplapl h3{
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0.5em 0;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.StoreItemsqxplapl .linkazer {
+  margin: 0.7em;
+  border: none;
+  padding: 0.1em;
+  font-size: 2em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.dzuhucxzjçxj{
+  display: none;
+  margin-right: 0.1em;
+  margin-left: 0.1em;
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.diddzdekz{
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  margin-right: 0.4em;
+  margin-left: 0.1em;
+
+}
+.StoreItemsqxplapl .linkazer::before {
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: '';
+  width: 50%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.StoreItemsqxplapl .linkazer:hover::before {
+  background: rgba(123, 151, 245,0.5);
+  width: 100%;
+}
+.StoreItemsqxplapl .linkazer.rounded {
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.StoreItemsqxplapl .linkazer.rounded .text-green {
+  color: rgb(8, 1, 94);
+  mix-blend-mode: darken;
+  font-size: 0.7em;
+}
+.StoreItemsqxplapl .linkazer.rounded::before {
+  border-radius:50%;
+
+  display: flex;
+  align-items: center;
+  width: 24%;
+  aspect-ratio: 1/1;
+  background:  rgba(123, 151, 245,0.5);
+}
+.StoreItemsqxplapl .linkazer.rounded:hover::before {
+  background:  rgba(123, 151, 245,0.5);
+  width: 110%;
+  border-radius: 0.5em;
+}
+.StoreItemsqxplapl .linkazer.rounded:hover .diddzdekz{
+  display: none;
+}
+.StoreItemsqxplapl .linkazer.rounded:hover .dzuhucxzjçxj{
+  display: inline;
+}
+@media screen and (max-width: 700px){
+  .StoreItemsqxplapl{
+    min-width: 180px;
+    max-width: 180px;
+  }
+  .StoreItemsqxplapl img{
+    max-height: 100px;
+    max-width: 100px;
+  }
+  .StoreItemsqxplapl h3{
+    font-size: 1em;
+  }
+  .StoreItemsqxplapl .linkazer{
+    font-size: 1.5em;
+  }
+  
+}

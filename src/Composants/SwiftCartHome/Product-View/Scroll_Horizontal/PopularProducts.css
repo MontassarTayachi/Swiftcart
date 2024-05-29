@@ -1,0 +1,24 @@
+.carddzcizjoijczjczp{
+    margin: 1em 1.5em;
+    padding: 1em 0.1em;
+    background-color: white;
+    & .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5em 1.5em;
+        & a{
+           font-size: 1em;
+           margin-left: 0.5em;
+           margin-top: 0.3em;
+           font-weight: 500;
+           color: rgb(14, 14, 143);
+        }
+    }
+}
+.carddzcizjoijczjczp h1{
+    font-size: 1.6em;
+    color: #0F1111;
+    margin: 0;
+    padding: 0;
+}

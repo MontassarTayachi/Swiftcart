@@ -1,0 +1,7 @@
+.Products_Store778778{
+    background-color: white;
+    padding: 1em;
+    & h1{
+        font-size: 1.5em;
+    }
+}

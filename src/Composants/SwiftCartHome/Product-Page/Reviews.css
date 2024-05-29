@@ -1,0 +1,107 @@
+.userReviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    & .user{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+        width: 100%;
+        & .userName{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
+            
+        & h1{
+            padding: 0;
+            margin: 0;
+            font-size: 1.1em;
+            font-weight: 500;
+            margin-left: 0.4em;
+        }
+        & .image{
+            font-size: 1em;
+        }
+        }
+
+
+    }
+    & .Review{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 2em;
+        justify-content: flex-start !important;
+        width: 100%;
+        & .rating{
+            color: #000;
+            margin: 0.5em 0;
+            font-size: 1em;
+        }
+         p{
+            font-weight: 350;
+        }
+    }
+   
+    & .button{
+        display: flex;
+        justify-content: flex-start;
+        padding-left:3em ;
+        align-items: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 100%;
+        & .helpful{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1em;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            font-weight: 500;
+            color: #000;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 0 0.2em 0 #000; 
+        }
+        & button{
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            font-weight: 500;
+            color: #000;
+            cursor: pointer;
+            transition: 0.3s;
+            border: none;
+            &:hover{
+                color: black;
+                background:#ddd ;
+            }
+        &  .helpful{
+            
+            border-radius: 5px;
+           
+        }
+        }
+
+    }
+    & .numbre_helpful{
+        padding:0 2em;
+        font-weight: 500;
+        color: rgb(2, 2, 104);
+
+    }
+   
+}
+@media screen and (max-width: 768px){
+    .userReviews{
+        width: 100%;
+    }
+}

@@ -1,0 +1,232 @@
+.Navbar{
+    background: #131921 ;
+    border-bottom: 1px solid #232f3e;
+    width: 100%;
+    height: 10vh;
+    padding-right: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+     & .logo{
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+        padding-bottom: 2px;
+        & img{
+            height: 80%;
+            width: auto;
+            cursor: pointer;
+            border-radius: 0.3em;
+            border: 0.15rem solid transparent;
+            &:hover{
+                border-color: whitesmoke;
+            }
+        }   
+    }
+    & .right{
+        display: flex;
+        align-items: center;
+        & .Connexion{
+            text-decoration: none;
+            height: 70%;
+            margin-right: 5%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 4%;
+            color: #ffc107;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            text-align: center;
+            font-size: 0.7rem;
+        }  
+        & .Commencer{
+            width: 6rem;
+            border: 0.2em solid #ffc107;
+            color: #ffc107;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 1em;
+            border-radius: 0.8em;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            font-size: 0.7rem;
+        } 
+        & .cybxzbxzb{
+            display: flex;
+            padding: 0;
+            margin: 0;
+            align-items: center;
+            & .cart{
+                margin-right: 0.3em;
+                display: flex;
+                border: 0.15rem solid transparent;
+                border-radius: 0.3em;
+                padding: 0.4em;
+                font-size: 1.5em;
+                color: whitesmoke;
+                & .css-zza0ns-MuiBadge-badge {
+                    background-color: #ffa929;    
+                    }
+                    
+                &:hover{
+                    border-color: whitesmoke;
+                 }
+            }
+        }
+    }
+}
+.Navbar2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #131921 ;
+    height: auto;
+    & .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        & .logo{
+            height: 100%;
+            width: auto;
+            display: flex;
+            align-items: center;
+            padding: 2px 5px;
+            & img{
+                height: 3rem;
+                width: auto;
+                cursor: pointer;
+                border-radius: 0.3em;
+                border: 0.15rem solid transparent;
+                &:hover{
+                    border-color: whitesmoke;
+                }
+            }   
+        }
+        & .right{
+            display: flex;
+            align-items: center;
+            & .Connexion{
+                text-decoration: none;
+                height: 70%;
+                margin-right: 5%;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding: 4%;
+                color: #ffc107;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                text-align: center;
+                font-size: 0.7rem;
+            }  
+            & .Commencer{
+                width: 6rem;
+                border: 0.2em solid #ffc107;
+                color: #ffc107;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding: 1em;
+                border-radius: 0.8em;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                text-align: center;
+                text-decoration: none;
+                font-size: 0.7rem;
+            } 
+            & .menu{
+                & button{
+                    background: transparent ;
+                    color: white;
+                    border: none;
+                    font-size: 1.5em;}
+            }
+           
+        }
+    }
+    
+
+ }
+ .ant-menu-sub{
+    display: flex;
+    
+   }
+  .ant-menu-sub {
+     font-weight: 600;
+   }
+ .ant-menu-sub ul{
+     font-weight: 500;
+     color: cadetblue;
+     margin-left: -1em !important;
+   } 
+
+
+
+.homeMenu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 0.5em;
+    background-color:  #46525f ;
+    padding-left: 0.2em;
+    & img{
+        width: 40px;
+        height: 40px;
+        border-radius: 0.5em;
+        margin-left: 0.5em;
+        margin-right: 0;
+    }
+    & h1{
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: rgb(230, 230, 230);
+        margin-left: 0.3rem;
+        margin: 0.1em;
+        max-width: 100px;
+        overflow: hidden;
+    }
+   
+  
+}
+
+ 
+.SearchBarzxpo{
+    border: none;
+    display: flex;
+    background: #131921 ;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.5em;
+}

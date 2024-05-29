@@ -1,0 +1,245 @@
+.ProductItem {
+  height: 320px;
+  width: 250px;
+  border: 0.15em solid rgba(0, 0, 0, 0.1); /* Couleur initiale de la bordure */
+  transition: transform 0.5s, border-color 2s; /* Transition fluide pour la transformation et le changement de couleur */
+  padding: 1em;
+  background: none;
+  cursor: pointer;
+  margin: 0.1em;
+}
+.ProductItem:hover {
+  transform: scale(1.01); /* Zoom sur l'élément au survol */
+  border: none;
+}
+.draw-border {
+color: #58afd1;
+transition: color 0.25s 0.0833333333s;
+position: relative;
+}
+.draw-border::before, .draw-border::after {
+border: 0 solid transparent;
+box-sizing: border-box;
+content: '';
+pointer-events: none;
+position: absolute;
+width: 0;
+height: 0;
+bottom: 0;
+right: 0;
+border-radius:0.25em ;
+}
+.draw-border::before {
+border-bottom-width: 0.2em;
+border-left-width: 0.2em;
+}
+.draw-border::after {
+border-top-width: 0.2em;
+border-right-width: 0.2em;
+}
+.draw-border:hover {
+box-shadow:none;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+border-color: #1d177c;
+transition: border-color 0s, width 0.25s, height 0.25s;
+width: 100%;
+height: 100%;
+}
+.draw-border:hover::before {
+transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+transition-delay: 0s, 0.25s, 0s;
+}
+
+.ProductItem:focus {
+
+}
+
+
+@keyframes rotationEtChangementCouleur {
+  0% {
+
+  }
+  10% {
+    border-color: rgb(0, 0, 255); /* Nouvelle couleur de la bordure */
+  }
+  20%{ 
+   
+     border-color: rgb(13, 13, 218);
+  }
+  30% {
+      border-color: rgb(67, 67, 167);
+    /* Nouvelle couleur de la bordure */
+  }
+ 50%{ 
+   
+  border-color: rgb(70, 20, 128);
+  }
+  60% {
+  
+    border-color: rgb(40, 56, 85); /* Nouvelle couleur de la bordure */
+  }
+  80%{ 
+   
+     border-color: rgb(48, 48, 75);
+  }
+  
+  100% {
+  
+    border-color: black; /* Nouvelle couleur de la bordure */
+  
+}}
+/* .ProductItem:hover {
+  animation: rotationEtChangementCouleur 2s forwards;
+  box-shadow:none;
+  transform: scale(1.01);
+} */
+
+  .ProductItem .cart1 img {
+     height: 200px;
+     width: 100%;
+     object-fit: contain;
+  }
+  .ProductItem .cart1 .hors_stock{
+      position: absolute;
+      z-index: 1;
+     top: 0;
+     left: 0;
+     height: 90px;
+      width:auto;
+
+  }
+.ProductItem .cart1{
+  position: relative;
+} 
+.ProductItem .azsd894dez98{
+  position: absolute;
+  top: 0.5em;
+  right: 0;
+  background-color: transparent;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  transition: all 5s ease-in-out; 
+}
+@keyframes translatation {
+  0% {
+    transform: translate(50%);
+  }
+  100% {
+    transform: translate(-5%)
+  }
+}
+@keyframes translatation2 {
+  0% {
+    transform: translate(0,30%);
+  }
+  100% {
+    transform: translate(0)
+  }
+}
+
+
+.ProductItem:hover .azsd894dez98{
+  display: flex;
+  animation: translatation 1s forwards;
+  transition: all 5s ease-in-out; 
+}
+.ProductItem .azsd894dez98 button{
+     background-color: white;
+     display: flex;
+     align-items: center;
+      justify-content: center;
+     color: gray;
+     border: none;
+     font-size: 1.5em;
+      padding: 0em;
+       margin-bottom: 0.3em;
+       height: 2.5rem;
+       width: 2.5rem;
+       box-shadow: 0 0 0.5em 0.1em rgba(0, 0, 0, 0.1);
+       transition: all 1s;
+}
+.ProductItem .azsd894dez98 button:hover{
+  background-color: #1d177c;
+  color: white;
+}
+.ProductItem .cart1 .panier{
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5em;
+  display: flex;
+  display: none;
+  font-size: 1em;
+  font-weight: 500;
+  color: white;
+  border: none;
+  text-align: center;
+}
+.ProductItem .cart1 .panier .text1{
+  display: none;
+}
+.ProductItem:hover .cart1 .panier{
+  display: flex;
+  z-index: 1;
+  justify-content:center ;
+  animation: translatation2 0.5s forwards;
+}
+.ProductItem .cart1 .panier:hover {
+  background-color: black;
+}
+.ProductItem .cart1 .panier:hover .text1{
+ display: block;
+ color: white;
+
+
+}
+.ProductItem .cart1 .panier .text1 .dzijzio{
+font-size: 1.5rem;
+font-weight: 900;
+}
+.ProductItem .cart1 .panier:hover .text2{
+ display: none;
+}
+.ProductItem .cart2 {display: flex;
+flex-direction: column;
+text-align: center;
+padding: 0.5em;
+justify-content: center;}
+.ProductItem .cart2 h1{
+  font-size: 1.1em;
+  font-weight: 400;
+  color: rgb(88, 87, 87);
+  margin: 0;
+  margin-bottom: 1em;
+}
+.ProductItem .cart2 h2{
+  font-size: 1.1em;
+  font-weight: 600;
+  color: blue;
+  margin: 0;
+}
+@media screen and (max-width: 500px) {
+  .ProductItem {
+    height: 280px;
+    width: 150px;
+  }
+  .ProductItem .cart1 img {
+    height: 160px ;
+    object-fit: cover;
+  }
+  .ProductItem .cart2 h1{
+    font-size: 1em;
+  }
+  .ProductItem .cart2 h2{
+    font-size: 1em;
+  }
+  
+}

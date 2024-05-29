@@ -1,0 +1,65 @@
+.SearchBarixzjokzp{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    width: 100%;
+    margin: 0 5em;
+}
+.SearchBarixzjokzp .ant-input {
+    border-radius: 0;
+    border-color:#ffa929 ;
+}
+.SearchBarixzjokzp .ant-input:hover,.SearchBarixzjokzp .ant-input:focus {
+    border-color: transparent;
+}
+.Dropdownsqqsx{
+ 
+}
+ .Dropdownsqqsx .nav-text{
+   border-radius: 0;
+   border: none;
+   font-weight: 400;
+   background-color:  #ffa929;
+   color: black;
+   border-top-left-radius:5px ;
+   border-bottom-left-radius:5px ;
+}
+.ant-input-group-addon button{
+    background-color: #ffa929;
+    padding-left:15px !important;
+    padding-right:15px !important;
+    color: black;
+}
+.ant-input-group-addon button:where(:hover){
+    background-color: #ffa929 !important;
+    color: black !important;
+}
+
+
+.Dropdownsqqsx .nav-text:hover{
+    background-color: #ffa929;
+    color: black;
+}
+.Dropdownsqqsx .nav-text:focus{
+    background-color: #ffa929!important;
+    color: black;
+}
+.Dropdownsqqsx .nav-text:active,.Dropdownsqqsx .nav-text:checked,.Dropdownsqqsx .nav-text:any-link,.Dropdownsqqsx .nav-text:visited,.Dropdownsqqsx .nav-text:link,.Dropdownsqqsx .nav-text:where(:hover),.Dropdownsqqsx .nav-text:where(:focus),.Dropdownsqqsx .nav-text:where(:active),.Dropdownsqqsx .nav-text:where(:checked),.Dropdownsqqsx .nav-text:where(:any-link),.Dropdownsqqsx .nav-text:where(:visited),.Dropdownsqqsx .nav-text:where(:link){
+    background-color: #ffa929!important;
+    color: black!important;
+}
+@media screen and (max-width: 800px){
+    .Dropdownsqqsx{
+        display: none;
+    }
+    .SearchBarixzjokzp{
+        width: 90%;
+        margin: 0.5em 1em;
+    }
+
+    .SearchBarixzjokzp .ant-input {
+        border-top-left-radius:0.4em ;
+        border-bottom-left-radius:0.4em ;
+        border-color:#ffa929 ;
+    }
+}

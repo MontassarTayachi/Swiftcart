@@ -1,0 +1,101 @@
+.EditName{
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+.EditName .header{
+    border-top-right-radius:1rem ;
+    border-top-left-radius:1rem ;
+    width: 100%;
+    padding: 0.9em;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+.EditName .header h1{
+    font-size: 1.5em;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.EditName .header button{
+    border: none;
+    font-size: 1.5em;
+    position: relative;
+    top: -0.4em;
+    color: black;
+}
+.EditName .body{
+background-color: transparent;
+padding: 0.9rem;
+}
+.EditName .body .erreur{
+    background-color: rgba(245, 202, 202, 0.719);
+    border: 0.1em solid rgba(238, 136, 136, 0.815);
+    border-radius: 0.5em;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    padding: 0.5em;
+}
+.EditName .body .erreur p{
+    color: rgb(138, 0, 0);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.EditName .body h5{
+    font-size: 1em;
+    color: black;
+}
+.EditName .body .input{
+    width: 100%;
+}
+.EditName .body .image-container{
+    width: 10rem;
+    height: auto;
+    display: block;
+    position: relative;
+    background-color: transparent;
+}
+.EditName .body .image-container img{
+    height: auto;
+    width: 100%;
+    border-radius: 1em;
+}
+.EditName .body .image-container button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    width: 3rem;
+    transform: translate(30%,20%);
+    font-size: 2em;
+    height: 3rem;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.05em solid white;
+    background-color: rgba(82, 81, 81, 1);
+     cursor: pointer;
+}
+.EditName .body .image-container button:hover{
+    background-color: rgb(61, 60, 60);
+}
+.EditName .body .button{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  
+}
+.EditName .body .button button{
+   margin-top: 0.5em;
+   border-radius: 0.5em;
+   padding:  0.5em 1em;
+   border: 0.01em solid black;
+   background-color: #FFD814;
+   font-size:0.7em ;
+   font-weight: 600;
+}
+.EditName .body .button button:hover{
+    background-color: #e6c211;
+}

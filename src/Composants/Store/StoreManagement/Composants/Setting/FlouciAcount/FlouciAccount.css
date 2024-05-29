@@ -1,0 +1,115 @@
+.settingssssmsmms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0 ;
+    & .setting__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0.6em 1em;
+        & h2{
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+        & button{
+            background-color: #f5f5f5;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            & svg{
+                font-size: 1.5rem;
+                color: #333;
+            }
+        }
+    }
+    & .setting__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        padding: 1em;
+        & .setting__content__item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 10px;
+            & .setting__content__item__label{
+                font-size: 1rem;
+                font-weight: 500;
+                color: #333;
+            }
+            & .setting__content__item__input{
+                width: 70%;
+                height: 40px;
+                border: 1px solid #f5f5f5;
+                border-radius: 5px;
+                padding: 0 10px;
+                font-size: 1rem;
+                margin: 0.7em;
+                font-weight: 500;
+                color: #333;
+                outline: none;
+                &::placeholder{
+                    color: #333;
+                }
+            }
+        }
+    }
+    & .setting__footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0.8em 1em;
+        background-color: white;
+        & button{
+            width: 100%;
+            height: 40px;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #f5f5f5;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover{
+                background-color: #0e0e0e;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .settingssssmsmms{
+        & .setting__content{
+            & .setting__content__item{
+                flex-direction: column;
+                align-items: flex-start;
+                & .setting__content__item__label{
+                    margin-bottom: 10px;
+                }
+                & .setting__content__item__input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}

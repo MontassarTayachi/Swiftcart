@@ -1,0 +1,50 @@
+.Devices44{
+    display: flex;
+    flex-direction:row;
+    padding: 1em;
+    width: 100%;
+    border-bottom: 0.1em solid #ddd;
+}
+.Devices .Details{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.Devices .Details h1 { 
+    font-size: 1.1em;
+    font-weight: 200;
+    text-decoration: underline;
+}
+.Devices .Details2 h1{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    font-size: 0.7em;
+    font-weight: 100;
+}
+
+
+.Devices .LogOut{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    align-items: center;
+}
+.Devices .LogOut button{
+    height: 60%;
+    border: 0.1em solid #ddd;
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+@media screen and (max-width: 1000px) {
+    .Devices44{
+        
+        flex-direction:column;
+        padding: 1em;
+       
+    }
+    .Devices .LogOut{justify-content: flex-start;
+    margin-top: 1em;}
+}

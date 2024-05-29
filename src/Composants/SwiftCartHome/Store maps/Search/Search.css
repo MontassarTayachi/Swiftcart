@@ -1,0 +1,83 @@
+.mapSearch7878{
+    background:linear-gradient(rgba(35, 47, 62, 0.8), rgba(35, 47, 62, 0.9)), url('../../../../assets/images/maps/maps.png') no-repeat center/cover;
+    padding: 0;
+    transition: opacity 10s ease-in-out, visibility 10s ease-in-out;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: 85vh;
+    padding-bottom:1em ;
+    width: 25%;
+    overflow: auto;
+    color: white!important;
+    & .button{
+     width: 100%;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-left: 1em;
+    margin: 0;
+    & h1{
+        margin: 0;
+        color: white;
+        font-size: 1.2em;
+    }
+    
+    & button{
+        color: white;
+        font-size: 2em;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        margin-right: 0.5em;
+
+    }
+    }
+    & .SearchCategory{
+        padding: 1em;
+        padding-bottom:0 ;
+    }
+   .select_by_category{
+    & h2{
+        font-size: 1.2em;
+        color: whitesmoke;
+        font-weight: 400;
+        margin: 0;
+        padding: 0.25em 0;
+        border-bottom: 1px solid rgb(129, 129, 129);
+    }
+   }
+}
+.mapSearch7878.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .mapSearch7878.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  @media screen and (max-width: 1200px){
+    .mapSearch7878{
+        width: 30%;
+    }
+
+    
+  }
+    @media screen and (max-width: 1050px){
+        .mapSearch7878{
+            width: 35%;
+        }
+    }
+    @media screen and (max-width: 900px){
+        .mapSearch7878{
+            width: 40%;
+        }
+    }
+    @media screen and (max-width: 800px){
+        .mapSearch7878{
+            position: absolute;
+            z-index: 3000;
+           width: 90%!important;
+        }
+    }

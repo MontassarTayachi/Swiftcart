@@ -1,0 +1,27 @@
+.Navigate{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background-color:  rgb(35, 47, 62);
+    padding: 0;
+    padding-left: 1em;
+}
+.Navigate .asdzdc{
+    margin-right: 1em;
+   height: 100%;
+   text-decoration: none;
+   color: white;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0.2em;
+    border-radius: 0.2em;
+    border: 0.1em solid transparent;
+
+}
+
+.Navigate .active{border-bottom: 0.2em solid white;
+}
+.Navigate .asdzdc:hover{
+   border: 0.1em solid white;
+}

@@ -1,0 +1,41 @@
+
+.HomeAdmin_Dashborad{
+    height: 100vh;
+    width: 100%;
+    display:grid;
+    grid-template-rows:8% auto auto;
+    grid-template-columns: 15% auto auto;
+    grid-template-areas:
+     "navbar   navbar navbar "
+     " sidbar   body body "
+     " sidbar   body body"
+    ; 
+    transition :all 0.1s linear;
+    }
+    .HomeAdmin_Dashborad .navbar{
+        padding: 0;
+        grid-area: navbar; 
+       
+    }
+    .HomeAdmin_Dashborad.close{  
+        grid-template-columns: 0px auto auto;           
+    }
+    .HomeAdmin_Dashborad .sidbar{
+        grid-area: sidbar;
+        padding: 0;       
+    }
+   
+    .HomeAdmin_Dashborad .abody{
+        overflow: auto;
+        background-color: whitesmoke;
+        grid-area: body;
+    }
+@media screen and (max-width:800px) {
+    .HomeAdmin_Dashborad{
+        grid-template-columns: 0 auto auto;
+    }
+    .HomeAdmin_Dashborad .sidbar{
+        display: none;
+    }
+}
+

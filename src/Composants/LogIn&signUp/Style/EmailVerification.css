@@ -1,0 +1,100 @@
+.EmailVerification{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(15, 23, 43, 0.6), rgba(15, 23, 43, 0.6)), url('../../../assets/images/Baground.png') no-repeat center/cover; 
+}
+.EmailVerification .card{
+    width: 40%;
+    padding: 2%;
+    background-color: white;
+    position: relative;
+    top:50%;
+    left:50%;
+    border-radius: 1.5rem;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.856);
+}
+.EmailVerification .card .cardheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+.EmailVerification .card h1{
+    background: linear-gradient(to right, #1c1c2be8, #3b3b5cda, #26726fd3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+.EmailVerification .card  p{
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+    text-align: center;
+    color: black;     
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.EmailVerification .verified{
+    color: green;
+  
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.EmailVerification .error{
+    color: rgb(158, 12, 12);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.EmailVerification .card img{
+    height: 5rem;
+    margin-top: -1rem;
+}
+.EmailVerification .card button{
+    background: linear-gradient(to bottom, rgba(90, 89, 89, 0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(43, 40, 40, 0.4) 0%, rgba(0,0,0,0.40) 120%) #777272;
+    background-blend-mode: multiply,multiply;
+    border-radius: 0.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    width:80%;
+    margin: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+   margin: 0 auto;
+   transition: all 0.5s ease-in-out;
+   font-size: 1.5em;
+   font-weight: 100;
+}
+.EmailVerification .card button .flech{
+    font-size: 1.6em;
+    transition: all 0.5s ease-in-out;}
+.EmailVerification .card button:hover .flech{
+    transform: translateX(0.2em);
+    transition: all 0.5s ease-in-out;
+}
+.EmailVerification .card button:hover{
+
+    background-color: rgba(8, 8, 8, 0.705);
+}
+@media screen and (max-width: 850px) {
+    .EmailVerification .card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px;
+        justify-content: center;
+    }
+   
+}
