@@ -1,7 +1,6 @@
 import React from 'react';
 import './Style/MyStore.css'
 import image from '../../../assets/images/swiftcart/swiftcart02.png';
-import image2 from '../../../assets/images/Montassar Tayachi.png';
 import { TiPlus } from "react-icons/ti";
 import Tabs from '@mui/joy/Tabs';
 import TabList from '@mui/joy/TabList';
@@ -44,7 +43,7 @@ function MyStore() {
       <div className='card'>
           <div className='header'>
           <img className='a1' onClick={()=>{navigate('/swiftcart')}} src={image}></img>
-          <img className='a2' src={userInfo.image||image2}></img>
+          <img className='a2' src={userInfo.image}></img>
           </div>
           <div className='WelcomeUser'>
             <h1>Welcome back, {ValidateurChaine.reduireEtValiderChaine(userInfo.first_name,12)}</h1>
